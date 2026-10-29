@@ -11,14 +11,22 @@
 </head>
 <body>
 <div id="top" class="page">
-  <header class="hero section reveal">
-    <span class="top-badge">2026年最新版｜登録不要・完全無料</span>
-    <p class="hero-kicker">撮り直しより先に、やることがありました。</p>
-    <h1><em>メルカリ売れ残り</em><br>復活ガイド</h1>
-    <p class="hero-plus">＋ 出品まるごとメーカー付き</p>
-    <p class="hero-sub">商品情報を入れるだけで<br><b>商品名・説明文・キーワード・撮影リスト</b>まで完成🌷</p>
-    <div class="hero-image"><img src="assets/mercari-kit-hero.png" alt="スマートフォンと洋服、バッグを並べた出品準備"></div>
-    <a class="profile-card" href="https://www.instagram.com/mina_ai_fukugyo/" target="_blank" rel="noopener noreferrer"><img src="assets/profile.png" alt="みな"><span><small>AI×SNSで在宅収入を叶える主婦</small><b>みな</b><i>@mina_ai_fukugyo →</i></span></a>
+  <nav class="nav" aria-label="ページ内ナビゲーション">
+    <a class="brand" href="#top"><span class="brand-mark">M</span><span>mina's mercari note</span></a>
+    <a class="nav-link" href="#ai-visuals">AI画像3パターンを見る ↓</a>
+  </nav>
+  <header class="hero reveal">
+    <div class="hero-copy">
+      <p class="eyebrow">SELL THE VALUE, NOT THE CLUTTER</p>
+      <h1>値下げの前に、<span>見せ方を整える。</span></h1>
+      <p class="hero-sub">売れ残った1商品を、ChatGPTと実物写真で見直すガイド。<br>参考LPの「AI画像3パターン」「撮影順」「売れ残り改善」を、迷わず使える形にまとめました。</p>
+      <div class="hero-actions"><a class="button button-primary" href="#ai-visuals">AI画像3パターンを見る ↓</a><a class="button button-secondary" href="#maker">出品メーカーを使う ▶</a></div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image"><img src="assets/mercari-kit-hero.png" alt="スマートフォンと洋服、バッグを並べた出品準備"></div>
+      <div class="hero-sticker">1商品<br>から<br>OK</div>
+      <div class="hero-note"><strong>実物写真が主役</strong><span>AI画像は補助として使い、色・形・傷を変えない。</span></div>
+    </div>
   </header>
 
   <main>
@@ -62,6 +70,37 @@
       <p>おしゃれに見せるより、購入前の不安をなくすことが先。実物を明るい場所で、順番に撮ります。</p>
       <ol class="photo-order"><li><b>1枚目</b><span>商品全体の正面</span></li><li><b>2枚目</b><span>背面・側面</span></li><li><b>3枚目</b><span>タグ・型番</span></li><li><b>4枚目</b><span>素材・サイズ表示</span></li><li><b>5枚目〜</b><span>細部・付属品・傷や汚れ</span></li></ol>
       <div class="warning"><b>⚠️ 大切なこと</b><p>実際に手元にある商品の写真を使い、形・色・傷を変える加工は避けます。AI画像だけで出品せず、必ず実物写真で状態を伝えてください。</p></div>
+    </section>
+
+    <section class="ai-visuals" id="ai-visuals">
+      <div class="section reveal">
+        <div class="section-head">
+          <p class="mini-label">3 AI VISUAL RECIPES</p>
+          <h2>1枚の実物写真から、<br>3つの見せ方を作る</h2>
+          <p>参考LPにあった3パターンを、そのまま試せるプロンプトにしました。実物写真を先に撮り、AI画像は補助カット・構図見本として使います。</p>
+        </div>
+        <div class="visual-recipe-grid">
+          <article class="visual-recipe">
+            <span class="recipe-no">01</span><div class="recipe-icon">👚</div>
+            <h3>マネキン着用イメージ</h3>
+            <p>服のシルエットや丈感を想像しやすくする見せ方。</p>
+            <div class="prompt-card compact"><div><b>ChatGPT用プロンプト</b><button class="copy-inline" data-copy="promptMannequin">コピー</button></div><pre id="promptMannequin">添付した実物の衣類写真を参考に、白い無地のマネキンへ自然に着せた商品イメージを作ってください。商品の色・柄・襟・袖・丈・素材感・ロゴは実物から変更しないでください。背景は明るいアイボリー、正面、自然光、正方形。これは着用イメージです。実物の傷や状態を隠す用途には使いません。</pre></div>
+          </article>
+          <article class="visual-recipe">
+            <span class="recipe-no">02</span><div class="recipe-icon">□</div>
+            <h3>白背景の商品カット</h3>
+            <p>生活感を抑え、商品の輪郭を見やすくする見せ方。</p>
+            <div class="prompt-card compact"><div><b>ChatGPT用プロンプト</b><button class="copy-inline" data-copy="promptWhite">コピー</button></div><pre id="promptWhite">添付した実物の商品写真の背景だけを、影の薄い白い無地背景へ整えてください。商品の形・色・柄・素材感・ロゴ・文字・付属品・傷・汚れ・使用感は一切変更しないでください。輪郭を不自然に切り抜かず、自然光の商品撮影、正方形、文字なしで仕上げてください。</pre></div>
+          </article>
+          <article class="visual-recipe">
+            <span class="recipe-no">03</span><div class="recipe-icon">A</div>
+            <h3>雑誌表紙風のイメージ</h3>
+            <p>SNS告知や保存用に、商品の魅力を一目で伝える見せ方。</p>
+            <div class="prompt-card compact"><div><b>ChatGPT用プロンプト</b><button class="copy-inline" data-copy="promptMagazine">コピー</button></div><pre id="promptMagazine">添付した実物の商品を主役に、上品なライフスタイル誌の表紙風ビジュアルを作ってください。商品の色・形・柄・素材感・ロゴは変更しないでください。背景は淡いベージュ、余白を広く、自然光。文字を入れる場合は「WARDROBE NOTE」のみ。これはSNS告知用イメージで、商品状態を示す実物写真の代わりには使いません。</pre></div>
+          </article>
+        </div>
+        <div class="ai-rule"><b>掲載するときの3ルール</b><p>① 1枚目は実物写真　② AI画像だと分かるようにする　③ 色・形・傷など購入判断に関わる部分を変えない</p></div>
+      </div>
     </section>
 
     <section class="section lesson reveal">
@@ -126,10 +165,10 @@
         <section id="results" class="results" aria-live="polite" hidden>
           <div class="result-head"><div><span>STEP 2</span><h3>出品セットができました</h3></div><button id="resetBtn" class="outline-btn" type="button">入力を修正</button></div>
           <div class="score-row"><div class="score-ring"><strong id="score">92</strong><small>/100</small></div><div><b>出品準備スコア</b><p id="scoreMessage"></p></div></div>
-          <div class="tabs" role="tablist"><button class="tab active" data-tab="copy">商品名・説明</button><button class="tab" data-tab="photo">写真</button><button class="tab" data-tab="prompt">画像補助</button><button class="tab" data-tab="money">手取り</button><button class="tab" data-tab="check">確認</button></div>
+          <div class="tabs" role="tablist"><button class="tab active" data-tab="copy">商品名・説明</button><button class="tab" data-tab="photo">写真</button><button class="tab" data-tab="prompt">AI画像3種</button><button class="tab" data-tab="money">手取り</button><button class="tab" data-tab="check">確認</button></div>
           <div class="tab-panel active" data-panel="copy"><div class="output-block"><div class="output-label"><span>商品名（40文字以内）</span><button class="copy-btn" data-copy="titleOut">コピー</button></div><p id="titleOut" class="title-output"></p><div id="titleCount" class="char-count"></div></div><div class="output-block"><div class="output-label"><span>商品説明</span><button class="copy-btn" data-copy="descriptionOut">コピー</button></div><pre id="descriptionOut"></pre></div><div class="output-block"><div class="output-label"><span>関連キーワード</span><button class="copy-btn" data-copy="keywordsOut">コピー</button></div><p id="keywordsOut" class="keyword-output"></p></div></div>
           <div class="tab-panel" data-panel="photo"><div id="photoOut" class="photo-list"></div><div class="notice"><b>大切：</b>実物写真を使い、傷・色・形を変える加工は避けてください。</div></div>
-          <div class="tab-panel" data-panel="prompt"><div class="output-block"><div class="output-label"><span>写真補正プロンプト</span><button class="copy-btn" data-copy="promptOut">コピー</button></div><pre id="promptOut"></pre></div><div class="notice safe"><b>安全設計：</b>背景と明るさだけを整える指示です。必ず実物と比較してください。</div></div>
+          <div class="tab-panel" data-panel="prompt"><div class="output-block"><div class="output-label"><span>商品に合わせたAI画像3パターン</span><button class="copy-btn" data-copy="promptOut">コピー</button></div><pre id="promptOut"></pre></div><div class="notice safe"><b>使い方：</b>実物写真を主役にし、AI画像は補助カット・SNS告知用として使います。必ず実物と比較してください。</div></div>
           <div class="tab-panel" data-panel="money"><div class="money-card"><span>販売価格</span><strong id="priceOut">¥0</strong><i>−</i><span>手数料の目安（10%）</span><strong id="feeOut">¥0</strong><i>−</i><span>送料</span><strong id="postageOut">¥0</strong><hr><span>手取りの目安</span><strong id="profitOut" class="profit">¥0</strong></div><p class="small-note">実際の手数料・送料は出品画面でご確認ください。</p></div>
           <div class="tab-panel" data-panel="check"><div id="checkOut" class="check-list"></div><button id="copyAll" class="generate-btn dark" type="button"><span>全部まとめてコピー</span><b>□</b></button></div>
         </section>
@@ -138,24 +177,9 @@
 
     <section class="section summary reveal"><h2>出品前に、この7つだけ確認🌻</h2><div class="final-check"><p>☑ 商品名にブランド・品名・色・サイズ</p><p>☑ 1枚目で商品全体がわかる</p><p>☑ タグ・型番・サイズ表示がある</p><p>☑ 傷や汚れを写真と文章で伝えた</p><p>☑ 採寸・素材・付属品を書いた</p><p>☑ 手数料・送料を引いた手取りを確認</p><p>☑ AIの出力を実物と照合した</p></div><p>全部を完璧にしなくても大丈夫。<br><b>まずは売れ残りの1商品だけ</b>、見直してみてくださいね🌷</p></section>
 
-    <section class="honest section reveal"><h2>⚠️ でも、正直にお伝えします。</h2><p>ここまで読んで、「これなら私にもできそう」と思ったかもしれません。</p><p>でも実は、<strong>不用品を1つ売り切ること</strong>と、<strong>AIで継続的な収入を作ること</strong>は別物です。</p><div class="honest-list"><p>🤔 次に何をすれば収入につながるの？</p><p>🤔 AIの便利な使い方をもっと知りたい</p><p>🤔 自己流で遠回りするのが怖い</p></div><p>ここで迷って、せっかくの一歩が止まってしまう方がとても多いんです。</p></section>
-
-    <section class="story section reveal">
-      <h2>最後に、私自身の話を少しだけ</h2>
-      <div class="story-dark"><h3>💔 私も、遠回りだらけでした</h3><p>自己流で副業に手を出し、気づけば<br><strong>150万円を失う</strong>ところまでいきました。</p><p>「私にはセンスがないんだ」と、布団の中で一人泣いた夜は数え切れません。</p></div>
-      <div class="story-arrow">▼</div>
-      <div class="story-light"><h3>✨ そこから抜け出せたのは「型」を知ってから</h3><p>試行錯誤の末にたどり着いたのは、<b>AIを賢く使って、お家で収入をつくる実践ノウハウとテンプレート</b>でした。</p><div><b>今のあなたと私の違いは、才能ではありません。</b><strong>「成果が出る型を知って、<br>失敗を避ける道を選んだかどうか」</strong><small>本当に、それだけなんです。</small></div></div>
-      <p class="story-end">時間を切り売りする内職ではなく、<br><mark>「AIとSNS」を賢く味方につけて</mark><br>長く家庭を支える収入源を育てる。<br>それが家族と自分を守る現実的な選択だと思っています。</p>
-    </section>
-
-    <section class="line-cta reveal">
-      <span class="cta-badge">👑 無料で今すぐ手に入る 👑</span>
-      <div class="cta-card"><small>ノウハウを凝縮した限定デジタルブック</small><h2>『AIマネタイズの教科書』</h2><p class="muted">公式LINEにお友だち登録していただいた方限定で<br>無料プレゼント中🎁</p><img class="book-cover" src="assets/book-cover.jpeg" alt="AIマネタイズの教科書"><div class="book-list"><b>📖 教科書の中身を少しだけご紹介！</b><p>💎 第一章：いま一番始めやすいAIマネタイズ手法</p><p>💎 第二章：ChatGPT収益化プロンプト</p><p>💎 第三章：AIマネタイズ神テンプレート</p><p>💎 第四章：マネタイズのための生成AIツール3選</p><p>💎 第五章：AI×SNSで収益を生むリアル事例</p></div><p class="cta-copy">150万円の失敗からようやく掴み取った、<br>「寝かしつけ後の30分が収入を生む時間に変わる実践マニュアル」を一冊に詰め込みました。</p><div class="support"><span>特別企画</span><b>希望者限定『AI収益化サポート会』</b><p>LINE読者様限定で、お家で安全に進められるサポート会をご案内しています🌱</p></div><a class="line-button" href="https://sub.aione.co.jp/line/open/ISEBuerKAyih?mtid=dpdPEBMvLdsV" target="_blank" rel="noopener noreferrer"><b>LINE</b><span>公式LINEで無料で受け取る<small>※配布は期間限定です</small></span></a></div>
-      <p class="cta-note">※内容・無料配布の条件は予告なく変更される場合があります。</p>
-    </section>
   </main>
 
-  <footer><a href="https://www.instagram.com/mina_ai_fukugyo/" target="_blank" rel="noopener noreferrer">Instagram: @mina_ai_fukugyo</a><p>みな ｜ AI×SNSで在宅収入を叶える主婦</p><p class="legal">本ページは非公式の出品支援ガイドです。メルカリおよびOpenAIとは関係ありません。成果を保証するものではありません。各サービスの最新の利用規約・ガイドラインをご確認ください。</p><small>© 2026 @mina_ai_fukugyo. All Rights Reserved.</small></footer>
+  <footer><b>mina's mercari note</b><p class="legal">本ページは非公式の出品支援ガイドです。メルカリおよびOpenAIとは関係ありません。AI画像を掲載する場合は、必ず実物写真と併用し、購入判断に関わる状態を正確に伝えてください。各サービスの最新の利用規約・ガイドラインをご確認ください。</p><small>© mina — メルカリ売れ残り復活ガイド</small></footer>
 </div>
 <div id="toast" class="toast" role="status">コピーしました！</div>
 <script src="app.js"></script>
