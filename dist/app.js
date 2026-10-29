@@ -33,7 +33,7 @@ $('#itemForm').addEventListener('submit',e=>{e.preventDefault();const d=data();c
 
 $('#resetBtn').addEventListener('click',()=>{$('#results').hidden=true;$('#itemForm').hidden=false;$('#itemForm').scrollIntoView({behavior:'smooth',block:'start'})});
 $$('.tab').forEach(btn=>btn.addEventListener('click',()=>{$$('.tab').forEach(x=>x.classList.remove('active'));$$('.tab-panel').forEach(x=>x.classList.remove('active'));btn.classList.add('active');$(`[data-panel="${btn.dataset.tab}"]`).classList.add('active')}));
-$$('.copy-btn').forEach(btn=>btn.addEventListener('click',()=>copyText($('#'+btn.dataset.copy).textContent)));
+$$('[data-copy]').forEach(btn=>btn.addEventListener('click',()=>copyText($('#'+btn.dataset.copy).textContent)));
 $('#copyAll').addEventListener('click',()=>copyText(`【商品名】\n${$('#titleOut').textContent}\n\n【商品説明】\n${$('#descriptionOut').textContent}\n\n【関連キーワード】\n${$('#keywordsOut').textContent}\n\n【写真補正プロンプト】\n${$('#promptOut').textContent}`));
 
 const io=new IntersectionObserver(entries=>entries.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target)}}),{threshold:.08});$$('.reveal').forEach(x=>io.observe(x));
